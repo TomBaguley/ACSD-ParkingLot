@@ -5,6 +5,27 @@ public class PremiumLot implements ParkingLot {
     @Override
     public int calculateFee(Ticket ticket) {
 
+        int days = ticket.getDays();
+        int hours = (ticket.getHours())%24;
+        int minutes = (ticket.getMinutes())%60;
+
+        int costPerHour = 4;
+        int costPerDay = 27;
+        
+
+            if(minutes > 0){
+                hours++;
+            }
+            if(hours > 6){
+                days++;
+                hours = 0;
+            }
+
+            days = days - days / 7;
+            int totalCost = days * costPerDay + hours * costPerHour;
+            return totalCost;
+        }
+
 
 
 
