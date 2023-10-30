@@ -41,6 +41,6 @@ public class PremiumLot implements ParkingLot {
 //        Daily max is $27
 //        Every 7th day or fraction thereof is free.  (ie, a stay of 13 days and 4 hours will be billed for 12 days
 
-        return 0;
+
     }
-}
+
