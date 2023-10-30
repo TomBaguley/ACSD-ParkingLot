@@ -4,6 +4,13 @@ public class PremiumLot implements ParkingLot {
 
     @Override
     public int calculateFee(Ticket ticket) {
+
+
+
+
+
+
+
 // ToDo:  Use TDD to Implement this function
 //  You will need to mock the Ticket interface
 //  Business rules for this parking lot are as follows:
